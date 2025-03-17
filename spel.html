@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Spellie</title>
+</head>
+
+<body id="body">
+    <div class="header" id="header3">
+        <div class="setting_div">
+            <a id="home_icon" href="main2.html">
+                Back
+            </a>
+        </div>
+        <div class="name_div">
+            <p class="name">Spellie</p>
+        </div>
+        <div class="setting_div"></div>
+    </div>
+     <div class="words"></div>
+    <center id="cent">
+        <div class="messages">
+            <div class="score2_div"></div>
+        <div id="message2_div">  </div> 
+        <div id= "time_div"> </div>
+        </div> 
+        </div>
+        <div class="whole_container">
+            <div id="replay"onclick="replayGame()">Replay</div>
+        <div id="word_div">
+            <div class="container">
+              <div class="shells"onclick="wordClick('shel-1')">  <div class="shell"id="shel-1"> <p class="rotatedText"></p>
+                </div> </div> 
+              <div class="shells"onclick="wordClick('shel-2')">  <div class="shell"id="shel-2"><p class="rotatedText"></p></div> </div> 
+            </div>
+            <div class="container">
+                  <div class="shells"onclick="wordClick('shel-3')">  <div class="shell"id="shel-3"> <p class="rotatedText"></p></div> </div> 
+                   <div class="shells"onclick="wordClick('middle')">  <div class="shell"id="middle"><p class="rotatedText"></p></div> </div> 
+                   <div class="shells"onclick="wordClick('shel-5')">  <div class="shell"id="shel-5"><p class="rotatedText"></p></div> </div> 
+            </div>
+            <div class="container">
+                  <div class="shells"onclick="wordClick('shel-6')">  <div class="shell"id="shel-6"><p class="rotatedText"></p></div> </div> 
+                   <div class="shells"onclick="wordClick('shel-7')">  <div class="shell"id="shel-7"><p class="rotatedText"></p></div> </div> 
+            </div>
+        </div> 
+        <div id="hint"onclick="hints()">Hint</div>
+        </div> </div> </div> 
+        <div class="options">
+            <div id="enterKey"onclick="wordClick('enterKey')">
+                Enter
+            </div>
+            <div id = "deleteKey"onclick="wordClick('deleteKey')">
+                Delete
+            </div>
+        </div>
+        <!-- <div id="message2_div">
+            <div id="time_div"></div>
+            <div id="score_div"></div>
+        </div>
+        <div id="new_game"> </div> -->
+    </center>
+    <div class="hintbox"></div>
+    <script src="script2.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+
+<body id="body1">
+    <div class="header" id="homecolor2">
+        <div class="setting_div" href="index.html">
+
+            <a id="home_icon" href="index.html">
+
+                Back
+            </a>
+        </div>
+        <div class="name_div">
+            <p class="name">Wordle</p>
+        </div>
+        <div class="setting_div"></div>
+    </div>
+    <center>
+        <div class="play_div" id="homecolor2">
+            <a href="main.html"> <button class="play_buttons"id="play_button"onclick="adjust('play')">
+                Play
+            </button> </a>
+            <button class="play_buttons">
+                Chooose grid 
+                <div id="grid_range"> 
+                    <div class="range"id="plus"onclick="adjust('+')"> +</div>
+                    <div class="range"id="minus"onclick="adjust('-')"> - </div> 
+                    <div id="number"> 3 </div> 
+                </div>
+            </button>
+            <button class="play_buttons"id="inst"onclick="instr()">Instructions</button>
+        </div>
+    </center>
+
+    <script src="script.js" defer> </script>
+</body>
+
+</html>
